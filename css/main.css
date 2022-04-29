@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header, footer {
+  background-color: #bbbbbb;
+  padding: 20px; }
+
+h1, .persa p, .kohana p, .britanico p, .elfo p, .siames p {
+  text-align: center;
+  font-family: "arial"; }
+
+.persa, .kohana, .britanico, .elfo, .siames {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .persa img, .kohana img, .britanico img, .elfo img, .siames img {
+    border: 2px solid yellowgreen;
+    border-radius: 15px;
+    margin: 20px;
+    width: 400px;
+    height: 400px; }
+  .persa h2, .kohana h2, .britanico h2, .elfo h2, .siames h2 {
+    color: green;
+    font-family: "Trebuchet MS"; }
+  .persa p, .kohana p, .britanico p, .elfo p, .siames p {
+    padding: 30px; }
+
+.kohana h2 {
+  color: #bb0707; }
+
+.britanico h2 {
+  color: #c5a309; }
+
+.elfo h2 {
+  color: #0026ff; }
+
+.siames h2 {
+  color: #7c0863; }
+
+main {
+  margin: 40px; }
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  max-width: 1400px;
+  margin: auto; }
+
+footer {
+  display: flex;
+  justify-content: center; }
+  footer i {
+    padding: 20px; }

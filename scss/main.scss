@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$estilos:(
+    color1: rgb(0, 128, 0),
+    color2: rgb(187, 7, 7),
+    color3: rgb(197, 163, 9),
+    color4: rgb(0, 38, 255),
+    color5: rgb(124, 8, 99),
+);
+$fuentes:(
+    fuente: 'arial',
+    fuente2: 'Trebuchet MS'
+);
+
+@mixin size-img ($w, $h){
+    width: $w;
+    height: $h;
+}
+header{
+    background-color: rgb(187, 187, 187);
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    font-family: map-get($fuentes, fuente);
+}
+.persa{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img{
+        border: 2px solid yellowgreen;
+        border-radius: 15px;
+        margin: 20px;
+        @include size-img(400px,400px)
+    }
+    h2{
+        color: map-get($estilos, color1);
+        font-family: map-get($fuentes, fuente2)
+    }
+    p{
+        @extend h1;
+        padding: 30px;
+    }
+}
+.kohana{
+    @extend .persa;
+    h2{
+        color: map-get($estilos, color2);
+    }
+}
+.britanico{
+    @extend .persa;
+    h2{
+        color: map-get($estilos, color3);
+    }
+}
+.elfo{
+    @extend .persa;
+    h2{
+        color: map-get($estilos, color4);
+    }
+}
+.siames{
+    @extend .persa;
+    h2{
+        color: map-get($estilos, color5);
+    }
+}
+main{
+    margin: 40px;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    max-width: 1400px;
+    margin: auto;
+
+}
+footer{
+    @extend header;
+    display: flex;
+    justify-content: center;
+    i{
+        padding: 20px;
+    }
+}
